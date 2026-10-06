@@ -5,13 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Stephanie Behr | German Language & Brand Specialist</title>
-  <meta name="description" content="Stephanie Behr is a German language and brand specialist working in transcreation, copywriting, localization and SEO.">
+  <meta name="description" content="Stephanie Behr is a German language and brand specialist working in transcreation, brand language, localization, SEO and AI-enabled content workflows.">
 
   <style>
     :root {
       --black: #151515;
       --grey: #707070;
       --light-grey: #eeeeec;
+      --soft-grey: #f5f5f3;
       --orange: #f05a00;
       --white: #ffffff;
     }
@@ -106,21 +107,22 @@
     }
 
     .hero-title {
-      font-size: clamp(1.4rem, 2.5vw, 2.5rem);
+      font-size: clamp(1.5rem, 2.7vw, 2.8rem);
+      line-height: 1.05;
       font-weight: 700;
-      letter-spacing: -0.04em;
-      max-width: 550px;
+      letter-spacing: -0.045em;
+      max-width: 600px;
     }
 
     .hero-skills {
       color: var(--grey);
-      font-size: 0.85rem;
+      font-size: 0.82rem;
       font-weight: 700;
       letter-spacing: 0.06em;
       text-align: right;
     }
 
-    /* GENERAL SECTIONS */
+    /* GENERAL */
 
     section {
       border-top: 1px solid var(--light-grey);
@@ -141,25 +143,25 @@
     }
 
     .large-copy {
-      font-size: clamp(1.8rem, 3.4vw, 3.5rem);
-      line-height: 1.13;
-      letter-spacing: -0.045em;
-      max-width: 1050px;
+      font-size: clamp(2rem, 3.6vw, 3.8rem);
+      line-height: 1.1;
+      letter-spacing: -0.05em;
+      max-width: 1100px;
     }
 
     .large-copy + .body-copy {
-      margin-top: 45px;
+      margin-top: 48px;
     }
 
     .body-copy {
-      max-width: 760px;
-      font-size: 1rem;
-      line-height: 1.7;
+      max-width: 790px;
+      font-size: 1.05rem;
+      line-height: 1.75;
       color: #454545;
     }
 
     .body-copy p + p {
-      margin-top: 18px;
+      margin-top: 20px;
     }
 
     /* SERVICES */
@@ -171,8 +173,8 @@
     .service {
       display: grid;
       grid-template-columns: 1fr 2fr;
-      gap: 40px;
-      padding: 32px 0;
+      gap: 45px;
+      padding: 38px 0;
       border-bottom: 1px solid var(--light-grey);
     }
 
@@ -181,75 +183,138 @@
     }
 
     .service h3 {
-      font-size: clamp(1.4rem, 2.2vw, 2.2rem);
-      letter-spacing: -0.04em;
+      font-size: clamp(1.45rem, 2.2vw, 2.3rem);
+      line-height: 1.05;
+      letter-spacing: -0.045em;
     }
 
     .service p {
       color: var(--grey);
-      max-width: 580px;
+      max-width: 620px;
       align-self: center;
+      line-height: 1.6;
     }
 
-    /* EXPERIENCE */
+    /* EXPERTISE */
 
-    .experience-grid {
+    .expertise-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2px;
+      background: var(--white);
     }
 
-    .experience-item {
-      min-height: 260px;
-      padding: 30px;
-      background: #f5f5f3;
+    .expertise-item {
+      min-height: 330px;
+      padding: 36px;
+      background: var(--soft-grey);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
     }
 
-    .experience-item span {
+    .expertise-number {
       color: var(--orange);
       font-size: 0.7rem;
       font-weight: 800;
       letter-spacing: 0.1em;
     }
 
-    .experience-item h3 {
-      font-size: clamp(1.5rem, 2.4vw, 2.4rem);
-      line-height: 1;
-      letter-spacing: -0.045em;
+    .expertise-item h3 {
+      font-size: clamp(2rem, 3.3vw, 3.5rem);
+      line-height: 0.95;
+      letter-spacing: -0.055em;
+      max-width: 500px;
     }
 
-    .experience-item p {
+    .expertise-item p {
+      color: var(--grey);
+      font-size: 0.88rem;
+      font-weight: 700;
+      letter-spacing: 0.035em;
+      line-height: 1.7;
+      max-width: 470px;
+    }
+
+    .industry-note {
+      margin-top: 32px;
+      color: var(--grey);
+      font-size: 0.85rem;
+    }
+
+    /* EXPERIENCE TIMELINE */
+
+    .timeline {
+      border-top: 1px solid var(--light-grey);
+    }
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 160px 1fr 1fr;
+      gap: 35px;
+      padding: 34px 0;
+      border-bottom: 1px solid var(--light-grey);
+    }
+
+    .timeline-year {
+      color: var(--orange);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+    }
+
+    .timeline-role h3 {
+      font-size: clamp(1.25rem, 2vw, 2rem);
+      line-height: 1.1;
+      letter-spacing: -0.04em;
+    }
+
+    .timeline-role span {
+      display: block;
+      margin-top: 7px;
       color: var(--grey);
       font-size: 0.9rem;
     }
 
-    /* CV */
-
-    .cv-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 0 60px;
+    .timeline-focus {
+      color: var(--grey);
+      font-size: 0.88rem;
+      line-height: 1.65;
+      align-self: center;
     }
 
-    .cv-item {
-      padding: 25px 0;
+    /* EDUCATION */
+
+    .credentials {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      margin-top: 60px;
+    }
+
+    .credential-heading {
+      color: var(--orange);
+      font-size: 0.7rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      margin-bottom: 20px;
+    }
+
+    .credential {
+      padding: 17px 0;
       border-bottom: 1px solid var(--light-grey);
     }
 
-    .cv-item small {
+    .credential strong {
       display: block;
-      color: var(--orange);
-      font-size: 0.68rem;
-      font-weight: 800;
-      letter-spacing: 0.1em;
-      margin-bottom: 8px;
+      font-size: 1.05rem;
     }
 
-    .cv-item strong {
-      font-size: 1.25rem;
+    .credential span {
+      display: block;
+      color: var(--grey);
+      font-size: 0.85rem;
+      margin-top: 4px;
     }
 
     /* CONTACT */
@@ -342,8 +407,9 @@
       .hero-bottom,
       .section-grid,
       .service,
-      .experience-grid,
-      .cv-grid {
+      .expertise-grid,
+      .timeline-item,
+      .credentials {
         grid-template-columns: 1fr;
       }
 
@@ -369,8 +435,20 @@
         gap: 12px;
       }
 
-      .experience-item {
-        min-height: 220px;
+      .expertise-item {
+        min-height: 280px;
+      }
+
+      .timeline-item {
+        gap: 12px;
+      }
+
+      .timeline-focus {
+        margin-top: 10px;
+      }
+
+      .credentials {
+        gap: 45px;
       }
 
       .contact {
@@ -390,6 +468,7 @@
   </style>
 </head>
 
+
 <body>
 
   <div class="page">
@@ -400,8 +479,8 @@
       <div class="nav-links">
         <a href="#about">ABOUT</a>
         <a href="#services">SERVICES</a>
+        <a href="#expertise">EXPERTISE</a>
         <a href="#experience">EXPERIENCE</a>
-        <a href="#cv">CV</a>
         <a href="#contact">CONTACT</a>
       </div>
     </nav>
@@ -409,7 +488,9 @@
 
     <header class="hero">
 
-      <div class="eyebrow">GERMAN LANGUAGE & BRAND SPECIALIST</div>
+      <div class="eyebrow">
+        GERMAN LANGUAGE & BRAND SPECIALIST
+      </div>
 
       <h1>
         STEPHANIE<br>
@@ -419,12 +500,12 @@
       <div class="hero-bottom">
 
         <div class="hero-title">
-          Words for brands.<br>
-          Made for German.
+          I shape how brands<br>
+          speak German.
         </div>
 
         <div class="hero-skills">
-          TRANSCREATION · COPYWRITING · LOCALIZATION · SEO
+          TRANSCREATION · BRAND LANGUAGE · LOCALIZATION · SEO · AI
         </div>
 
       </div>
@@ -436,33 +517,38 @@
 
       <div class="section-grid">
 
-        <div class="section-label">01 / ABOUT</div>
+        <div class="section-label">
+          01 / ABOUT
+        </div>
 
         <div>
 
           <div class="large-copy">
-            I help international brands find the right words for the German market.
+            I shape how international brands speak to German audiences.
           </div>
 
           <div class="body-copy">
 
             <p>
-              I'm a German language and brand specialist based in Berlin,
-              working with international brands and agencies on content for
-              the German market.
+              I'm a German language and brand specialist with a background
+              in copywriting, editorial content, localization and digital
+              marketing.
             </p>
 
             <p>
-              My work brings together translation, copywriting and localization:
-              from adapting global campaigns and brand messaging to shaping
-              digital content, UI and SEO copy that feels natural, relevant
-              and on-brand in German.
+              For more than 15 years, I've worked at the intersection of
+              language, brands and digital experiences, from writing original
+              content and shaping brand voices to adapting global campaigns,
+              products and platforms for German audiences.
             </p>
 
             <p>
-              Alongside hands-on content work, I support international teams
-              with language strategy, terminology and linguistic quality as
-              an experienced German Language Lead.
+              Today, I specialize in transcreation, brand language,
+              localization and SEO, combining creative language expertise
+              with market insight, technology and AI-enabled workflows.
+              I also support global teams as a German Language Lead, helping
+              brands stay clear, consistent and unmistakably themselves
+              across markets.
             </p>
 
           </div>
@@ -478,47 +564,123 @@
 
       <div class="section-grid">
 
-        <div class="section-label">02 / SERVICES</div>
+        <div class="section-label">
+          02 / SERVICES
+        </div>
 
         <div class="services">
 
           <div class="service">
-            <h3>Transcreation</h3>
+            <h3>Transcreation &<br>Brand Language</h3>
             <p>
-              Campaigns, marketing copy and brand content adapted for the
-              German market.
+              Campaigns, marketing copy, tone of voice and brand messaging
+              shaped for German audiences.
             </p>
           </div>
 
           <div class="service">
-            <h3>Brand Language</h3>
+            <h3>Localization &<br>Digital Experiences</h3>
             <p>
-              Tone of voice, terminology, language strategy and linguistic
-              quality.
+              Websites, apps, UI and digital products that feel natural,
+              intuitive and on-brand in German.
             </p>
           </div>
 
           <div class="service">
-            <h3>Localization</h3>
+            <h3>SEO &<br>Content</h3>
             <p>
-              Websites, apps, UI and digital experiences that feel at home
-              in German.
+              German content creation, adaptation and optimization with
+              language, search intent and brand voice in mind.
             </p>
           </div>
 
           <div class="service">
-            <h3>SEO Content</h3>
+            <h3>AI &<br>Language</h3>
             <p>
-              German SEO localization, content adaptation and optimization.
+              Harnessing AI-powered workflows while preserving the human
+              judgment, cultural nuance and brand voice that make content work.
             </p>
           </div>
 
-          <div class="service">
-            <h3>Copywriting</h3>
-            <p>
-              German copy for digital products, marketing and editorial
-              content.
-            </p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section id="expertise">
+
+      <div class="section-grid">
+
+        <div class="section-label">
+          03 / EXPERTISE
+        </div>
+
+        <div>
+
+          <div class="expertise-grid">
+
+            <div class="expertise-item">
+              <div class="expertise-number">01</div>
+
+              <h3>
+                BRAND &<br>
+                CONTENT
+              </h3>
+
+              <p>
+                COPYWRITING · CAMPAIGNS · EDITORIAL · TONE OF VOICE
+              </p>
+            </div>
+
+
+            <div class="expertise-item">
+              <div class="expertise-number">02</div>
+
+              <h3>
+                DIGITAL &<br>
+                LOCALIZATION
+              </h3>
+
+              <p>
+                UI · APPS · PLATFORMS · E-COMMERCE
+              </p>
+            </div>
+
+
+            <div class="expertise-item">
+              <div class="expertise-number">03</div>
+
+              <h3>
+                LANGUAGE<br>
+                LEADERSHIP
+              </h3>
+
+              <p>
+                STRATEGY · TERMINOLOGY · QUALITY · BRAND CONSISTENCY
+              </p>
+            </div>
+
+
+            <div class="expertise-item">
+              <div class="expertise-number">04</div>
+
+              <h3>
+                AI &<br>
+                SEO
+              </h3>
+
+              <p>
+                AI-ENABLED WORKFLOWS · CONTENT OPTIMIZATION · SEARCH
+              </p>
+            </div>
+
+          </div>
+
+          <div class="industry-note">
+            Experience across global sports, lifestyle, technology,
+            gaming and digital brands.
           </div>
 
         </div>
@@ -532,72 +694,146 @@
 
       <div class="section-grid">
 
-        <div class="section-label">03 / EXPERIENCE</div>
+        <div class="section-label">
+          04 / SELECTED EXPERIENCE
+        </div>
 
         <div>
 
-          <div class="experience-grid">
+          <div class="timeline">
 
-            <div class="experience-item">
-              <span>01</span>
-              <h3>SPORTS &<br>LIFESTYLE</h3>
-              <p>
-                Campaigns, product storytelling, digital marketing and
-                e-commerce.
-              </p>
+            <div class="timeline-item">
+
+              <div class="timeline-year">
+                2017 → NOW
+              </div>
+
+              <div class="timeline-role">
+                <h3>Freelance Language & Brand Specialist</h3>
+                <span>Independent</span>
+              </div>
+
+              <div class="timeline-focus">
+                Transcreation · Copywriting · Localization ·
+                Language Leadership · SEO
+              </div>
+
             </div>
 
-            <div class="experience-item">
-              <span>02</span>
-              <h3>TECH &<br>DIGITAL</h3>
-              <p>
-                Apps, platforms, creator content, UI and consumer technology.
-              </p>
+
+            <div class="timeline-item">
+
+              <div class="timeline-year">
+                2014 → 2016
+              </div>
+
+              <div class="timeline-role">
+                <h3>Game Translator</h3>
+                <span>Kabam Games</span>
+              </div>
+
+              <div class="timeline-focus">
+                Localization · Marketing · LQA · ASO
+              </div>
+
             </div>
 
-            <div class="experience-item">
-              <span>03</span>
-              <h3>B2B &<br>FINANCE</h3>
-              <p>
-                Web content, SEO and specialized marketing communication.
-              </p>
+
+            <div class="timeline-item">
+
+              <div class="timeline-year">
+                2013 → 2014
+              </div>
+
+              <div class="timeline-role">
+                <h3>Lead Editor</h3>
+                <span>Sonoma Internet</span>
+              </div>
+
+              <div class="timeline-focus">
+                Editorial · Copywriting · SEO · Digital Marketing
+              </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+              <div class="timeline-year">
+                2011 → 2012
+              </div>
+
+              <div class="timeline-role">
+                <h3>Copywriter / Narrative Designer</h3>
+                <span>Bigpoint</span>
+              </div>
+
+              <div class="timeline-focus">
+                Brand Content · Storytelling · Marketing
+              </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+              <div class="timeline-year">
+                2010 → 2011
+              </div>
+
+              <div class="timeline-role">
+                <h3>Social Media Marketing & Country Manager DACH</h3>
+                <span>Wooga</span>
+              </div>
+
+              <div class="timeline-focus">
+                Content · Localization · PR · Social
+              </div>
+
             </div>
 
           </div>
 
-        </div>
 
-      </div>
+          <div class="credentials">
 
-    </section>
+            <div>
+
+              <div class="credential-heading">
+                EDUCATION
+              </div>
+
+              <div class="credential">
+                <strong>BA Media Literacy</strong>
+                <span>Visual Culture & Communication</span>
+              </div>
+
+              <div class="credential">
+                <strong>German / English Linguistics & Philology</strong>
+                <span>Otto von Guericke University</span>
+              </div>
+
+            </div>
 
 
-    <section id="cv">
+            <div>
 
-      <div class="section-grid">
+              <div class="credential-heading">
+                QUALIFICATIONS
+              </div>
 
-        <div class="section-label">04 / CV</div>
+              <div class="credential">
+                <strong>Certified Marketing Copywriter</strong>
+                <span>Bundesverband professioneller Werbetexter e.V.</span>
+              </div>
 
-        <div class="cv-grid">
+              <div class="credential">
+                <strong>Certified Post-Editor</strong>
+                <span>TAUS</span>
+              </div>
 
-          <div class="cv-item">
-            <small>EXPERIENCE</small>
-            <strong>10+ years freelance</strong>
-          </div>
+            </div>
 
-          <div class="cv-item">
-            <small>SPECIALISM</small>
-            <strong>Language & brand</strong>
-          </div>
-
-          <div class="cv-item">
-            <small>LANGUAGE LEAD</small>
-            <strong>German</strong>
-          </div>
-
-          <div class="cv-item">
-            <small>BASED IN</small>
-            <strong>Berlin, Germany</strong>
           </div>
 
         </div>
@@ -613,9 +849,13 @@
 
     <div class="contact-inner">
 
-      <div class="section-label">05 / CONTACT</div>
+      <div class="section-label">
+        05 / CONTACT
+      </div>
 
-      <h2>LET'S TALK.</h2>
+      <h2>
+        LET'S TALK.
+      </h2>
 
       <div class="contact-details">
 
@@ -623,13 +863,18 @@
           YOUR-EMAIL-HERE
         </a>
 
-        <div>Berlin · Germany</div>
+        <div>
+          Berlin · Germany
+        </div>
 
       </div>
 
+
       <footer>
 
-        <div>© 2026 Stephanie Behr</div>
+        <div>
+          © 2026 Stephanie Behr
+        </div>
 
         <div class="legal">
           <a href="#">IMPRINT</a>
