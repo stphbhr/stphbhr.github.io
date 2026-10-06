@@ -3,10 +3,644 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stephanie Behr</title>
+
+  <title>Stephanie Behr | German Language & Brand Specialist</title>
+  <meta name="description" content="Stephanie Behr is a German language and brand specialist working in transcreation, copywriting, localization and SEO.">
+
+  <style>
+    :root {
+      --black: #151515;
+      --grey: #707070;
+      --light-grey: #eeeeec;
+      --orange: #f05a00;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--white);
+      color: var(--black);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.4;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .page {
+      width: min(1500px, calc(100% - 80px));
+      margin: 0 auto;
+    }
+
+    /* NAV */
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 32px 0;
+      border-bottom: 1px solid var(--light-grey);
+    }
+
+    .logo {
+      font-size: 1rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+    }
+
+    .nav-links a:hover {
+      color: var(--orange);
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 78vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 80px 0;
+    }
+
+    .eyebrow {
+      color: var(--orange);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      margin-bottom: 28px;
+    }
+
+    h1 {
+      font-size: clamp(4.5rem, 12vw, 11rem);
+      line-height: 0.82;
+      letter-spacing: -0.075em;
+      font-weight: 900;
+      max-width: 1300px;
+    }
+
+    .hero-bottom {
+      margin-top: 65px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: end;
+    }
+
+    .hero-title {
+      font-size: clamp(1.4rem, 2.5vw, 2.5rem);
+      font-weight: 700;
+      letter-spacing: -0.04em;
+      max-width: 550px;
+    }
+
+    .hero-skills {
+      color: var(--grey);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-align: right;
+    }
+
+    /* GENERAL SECTIONS */
+
+    section {
+      border-top: 1px solid var(--light-grey);
+      padding: 110px 0;
+    }
+
+    .section-grid {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      gap: 70px;
+    }
+
+    .section-label {
+      color: var(--orange);
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+    }
+
+    .large-copy {
+      font-size: clamp(1.8rem, 3.4vw, 3.5rem);
+      line-height: 1.13;
+      letter-spacing: -0.045em;
+      max-width: 1050px;
+    }
+
+    .large-copy + .body-copy {
+      margin-top: 45px;
+    }
+
+    .body-copy {
+      max-width: 760px;
+      font-size: 1rem;
+      line-height: 1.7;
+      color: #454545;
+    }
+
+    .body-copy p + p {
+      margin-top: 18px;
+    }
+
+    /* SERVICES */
+
+    .services {
+      margin-top: -20px;
+    }
+
+    .service {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 40px;
+      padding: 32px 0;
+      border-bottom: 1px solid var(--light-grey);
+    }
+
+    .service:first-child {
+      border-top: 1px solid var(--light-grey);
+    }
+
+    .service h3 {
+      font-size: clamp(1.4rem, 2.2vw, 2.2rem);
+      letter-spacing: -0.04em;
+    }
+
+    .service p {
+      color: var(--grey);
+      max-width: 580px;
+      align-self: center;
+    }
+
+    /* EXPERIENCE */
+
+    .experience-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .experience-item {
+      min-height: 260px;
+      padding: 30px;
+      background: #f5f5f3;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .experience-item span {
+      color: var(--orange);
+      font-size: 0.7rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+    }
+
+    .experience-item h3 {
+      font-size: clamp(1.5rem, 2.4vw, 2.4rem);
+      line-height: 1;
+      letter-spacing: -0.045em;
+    }
+
+    .experience-item p {
+      color: var(--grey);
+      font-size: 0.9rem;
+    }
+
+    /* CV */
+
+    .cv-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0 60px;
+    }
+
+    .cv-item {
+      padding: 25px 0;
+      border-bottom: 1px solid var(--light-grey);
+    }
+
+    .cv-item small {
+      display: block;
+      color: var(--orange);
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      margin-bottom: 8px;
+    }
+
+    .cv-item strong {
+      font-size: 1.25rem;
+    }
+
+    /* CONTACT */
+
+    .contact {
+      padding: 120px 0 70px;
+      background: var(--black);
+      color: var(--white);
+    }
+
+    .contact-inner {
+      width: min(1500px, calc(100% - 80px));
+      margin: 0 auto;
+    }
+
+    .contact .section-label {
+      margin-bottom: 35px;
+    }
+
+    .contact h2 {
+      font-size: clamp(4rem, 10vw, 10rem);
+      line-height: 0.85;
+      letter-spacing: -0.07em;
+      margin-bottom: 70px;
+    }
+
+    .contact-details {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 30px;
+    }
+
+    .email {
+      font-size: clamp(1.2rem, 2.3vw, 2.2rem);
+      border-bottom: 2px solid var(--orange);
+      padding-bottom: 5px;
+    }
+
+    .email:hover {
+      color: var(--orange);
+    }
+
+    footer {
+      margin-top: 100px;
+      padding-top: 25px;
+      border-top: 1px solid #3a3a3a;
+      display: flex;
+      justify-content: space-between;
+      gap: 25px;
+      color: #999;
+      font-size: 0.72rem;
+    }
+
+    .legal {
+      display: flex;
+      gap: 25px;
+    }
+
+    .legal a:hover {
+      color: var(--white);
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 800px) {
+
+      .page,
+      .contact-inner {
+        width: calc(100% - 36px);
+      }
+
+      nav {
+        padding: 22px 0;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        min-height: 82vh;
+        padding: 60px 0;
+      }
+
+      h1 {
+        font-size: clamp(4.1rem, 21vw, 7rem);
+      }
+
+      .hero-bottom,
+      .section-grid,
+      .service,
+      .experience-grid,
+      .cv-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-bottom {
+        margin-top: 50px;
+        gap: 25px;
+      }
+
+      .hero-skills {
+        text-align: left;
+        line-height: 1.8;
+      }
+
+      section {
+        padding: 75px 0;
+      }
+
+      .section-grid {
+        gap: 35px;
+      }
+
+      .service {
+        gap: 12px;
+      }
+
+      .experience-item {
+        min-height: 220px;
+      }
+
+      .contact {
+        padding: 90px 0 45px;
+      }
+
+      .contact-details,
+      footer {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      footer {
+        margin-top: 75px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>STEPHANIE BEHR.</h1>
-  <p>German Language & Brand Specialist</p>
+
+  <div class="page">
+
+    <nav>
+      <a class="logo" href="#">STEPHANIE BEHR.</a>
+
+      <div class="nav-links">
+        <a href="#about">ABOUT</a>
+        <a href="#services">SERVICES</a>
+        <a href="#experience">EXPERIENCE</a>
+        <a href="#cv">CV</a>
+        <a href="#contact">CONTACT</a>
+      </div>
+    </nav>
+
+
+    <header class="hero">
+
+      <div class="eyebrow">GERMAN LANGUAGE & BRAND SPECIALIST</div>
+
+      <h1>
+        STEPHANIE<br>
+        BEHR.
+      </h1>
+
+      <div class="hero-bottom">
+
+        <div class="hero-title">
+          Words for brands.<br>
+          Made for German.
+        </div>
+
+        <div class="hero-skills">
+          TRANSCREATION · COPYWRITING · LOCALIZATION · SEO
+        </div>
+
+      </div>
+
+    </header>
+
+
+    <section id="about">
+
+      <div class="section-grid">
+
+        <div class="section-label">01 / ABOUT</div>
+
+        <div>
+
+          <div class="large-copy">
+            I help international brands find the right words for the German market.
+          </div>
+
+          <div class="body-copy">
+
+            <p>
+              I'm a German language and brand specialist based in Berlin,
+              working with international brands and agencies on content for
+              the German market.
+            </p>
+
+            <p>
+              My work brings together translation, copywriting and localization:
+              from adapting global campaigns and brand messaging to shaping
+              digital content, UI and SEO copy that feels natural, relevant
+              and on-brand in German.
+            </p>
+
+            <p>
+              Alongside hands-on content work, I support international teams
+              with language strategy, terminology and linguistic quality as
+              an experienced German Language Lead.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section id="services">
+
+      <div class="section-grid">
+
+        <div class="section-label">02 / SERVICES</div>
+
+        <div class="services">
+
+          <div class="service">
+            <h3>Transcreation</h3>
+            <p>
+              Campaigns, marketing copy and brand content adapted for the
+              German market.
+            </p>
+          </div>
+
+          <div class="service">
+            <h3>Brand Language</h3>
+            <p>
+              Tone of voice, terminology, language strategy and linguistic
+              quality.
+            </p>
+          </div>
+
+          <div class="service">
+            <h3>Localization</h3>
+            <p>
+              Websites, apps, UI and digital experiences that feel at home
+              in German.
+            </p>
+          </div>
+
+          <div class="service">
+            <h3>SEO Content</h3>
+            <p>
+              German SEO localization, content adaptation and optimization.
+            </p>
+          </div>
+
+          <div class="service">
+            <h3>Copywriting</h3>
+            <p>
+              German copy for digital products, marketing and editorial
+              content.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section id="experience">
+
+      <div class="section-grid">
+
+        <div class="section-label">03 / EXPERIENCE</div>
+
+        <div>
+
+          <div class="experience-grid">
+
+            <div class="experience-item">
+              <span>01</span>
+              <h3>SPORTS &<br>LIFESTYLE</h3>
+              <p>
+                Campaigns, product storytelling, digital marketing and
+                e-commerce.
+              </p>
+            </div>
+
+            <div class="experience-item">
+              <span>02</span>
+              <h3>TECH &<br>DIGITAL</h3>
+              <p>
+                Apps, platforms, creator content, UI and consumer technology.
+              </p>
+            </div>
+
+            <div class="experience-item">
+              <span>03</span>
+              <h3>B2B &<br>FINANCE</h3>
+              <p>
+                Web content, SEO and specialized marketing communication.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section id="cv">
+
+      <div class="section-grid">
+
+        <div class="section-label">04 / CV</div>
+
+        <div class="cv-grid">
+
+          <div class="cv-item">
+            <small>EXPERIENCE</small>
+            <strong>10+ years freelance</strong>
+          </div>
+
+          <div class="cv-item">
+            <small>SPECIALISM</small>
+            <strong>Language & brand</strong>
+          </div>
+
+          <div class="cv-item">
+            <small>LANGUAGE LEAD</small>
+            <strong>German</strong>
+          </div>
+
+          <div class="cv-item">
+            <small>BASED IN</small>
+            <strong>Berlin, Germany</strong>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </div>
+
+
+  <section class="contact" id="contact">
+
+    <div class="contact-inner">
+
+      <div class="section-label">05 / CONTACT</div>
+
+      <h2>LET'S TALK.</h2>
+
+      <div class="contact-details">
+
+        <a class="email" href="mailto:YOUR-EMAIL-HERE">
+          YOUR-EMAIL-HERE
+        </a>
+
+        <div>Berlin · Germany</div>
+
+      </div>
+
+      <footer>
+
+        <div>© 2026 Stephanie Behr</div>
+
+        <div class="legal">
+          <a href="#">IMPRINT</a>
+          <a href="#">PRIVACY</a>
+        </div>
+
+      </footer>
+
+    </div>
+
+  </section>
+
 </body>
 </html>
