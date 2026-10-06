@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Imprint | Stephanie Behr</title>
+
+  <style>
+    :root {
+      --black: #151515;
+      --grey: #707070;
+      --light-grey: #eeeeec;
+      --orange: #f05a00;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: var(--white);
+      color: var(--black);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .page {
+      width: min(1500px, calc(100% - 80px));
+      margin: 0 auto;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 32px 0;
+      border-bottom: 1px solid var(--light-grey);
+    }
+
+    .logo {
+      font-size: 1rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+    }
+
+    .back {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+    }
+
+    .back:hover {
+      color: var(--orange);
+    }
+
+    main {
+      min-height: 75vh;
+      padding: 110px 0 140px;
+    }
+
+    .eyebrow {
+      color: var(--orange);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      margin-bottom: 28px;
+    }
+
+    h1 {
+      font-size: clamp(4rem, 10vw, 9rem);
+      line-height: 0.85;
+      letter-spacing: -0.07em;
+      font-weight: 900;
+      margin-bottom: 90px;
+    }
+
+    .legal-grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 70px;
+      border-top: 1px solid var(--light-grey);
+      padding-top: 35px;
+    }
+
+    .label {
+      color: var(--grey);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+    }
+
+    .content {
+      max-width: 700px;
+      font-size: 1.05rem;
+    }
+
+    .content p + p {
+      margin-top: 28px;
+    }
+
+    .content a {
+      border-bottom: 1px solid var(--orange);
+    }
+
+    footer {
+      padding: 25px 0 45px;
+      border-top: 1px solid var(--light-grey);
+      display: flex;
+      justify-content: space-between;
+      color: var(--grey);
+      font-size: 0.72rem;
+    }
+
+    .legal-links {
+      display: flex;
+      gap: 25px;
+    }
+
+    .legal-links a:hover {
+      color: var(--orange);
+    }
+
+    @media (max-width: 800px) {
+      .page {
+        width: calc(100% - 36px);
+      }
+
+      nav {
+        padding: 22px 0;
+      }
+
+      main {
+        padding: 75px 0 100px;
+      }
+
+      h1 {
+        margin-bottom: 60px;
+      }
+
+      .legal-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+      }
+
+      footer {
+        flex-direction: column;
+        gap: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="page">
+
+    <nav>
+      <a class="logo" href="index.html">STEPHANIE BEHR.</a>
+      <a class="back" href="index.html">← BACK</a>
+    </nav>
+
+    <main>
+
+      <div class="eyebrow">
+        LEGAL
+      </div>
+
+      <h1>
+        IMPRINT.
+      </h1>
+
+      <div class="legal-grid">
+
+        <div class="label">
+          INFORMATION PURSUANT TO § 5 DDG
+        </div>
+
+        <div class="content">
+
+          <p>
+            <strong>Stephanie Behr</strong><br>
+            Meyerbeerstraße 69<br>
+            13088 Berlin<br>
+            Germany
+          </p>
+
+          <p>
+            <strong>Contact</strong><br>
+            Email:
+            <a href="mailto:hi@stphbhr.de">hi@stphbhr.de</a>
+          </p>
+
+          <p>
+            <strong>VAT identification number</strong><br>
+            VAT ID pursuant to § 27a German VAT Act:<br>
+            DE309609043
+          </p>
+
+        </div>
+
+      </div>
+
+    </main>
+
+    <footer>
+
+      <div>
+        © 2026 Stephanie Behr
+      </div>
+
+      <div class="legal-links">
+        <a href="imprint.html">IMPRINT</a>
+        <a href="privacy.html">PRIVACY</a>
+      </div>
+
+    </footer>
+
+  </div>
+
+</body>
+</html>
